@@ -1,0 +1,14 @@
+{
+  "_actualizado": "2026-11-15",
+  "_nota": "Respuestas generales. Las marcadas como pendientes deben confirmarse con el agente aduanero antes de usar con clientes.",
+  "preguntas": [
+    { "tema": "modalidades", "respuesta": "Hay dos modalidades de presupuesto: 'sin reparar' (vehículo puesto fuera de puerto en Puerto Cortés, tal como llega) y 'reparado' (incluye un rango de costo de reparación según el nivel de daño)." },
+    { "tema": "subastas", "respuesta": "Los vehículos se compran en las subastas de Copart e IAAI en Estados Unidos. El precio final de subasta varía según millaje, daño y demanda; por eso los estimados se dan en rango." },
+    { "tema": "amnistia", "respuesta": "Los vehículos modelo 2010 y anteriores pagan una tasa única de L 10,000 (amnistía vehicular, ampliada en 2026), más parqueo fiscal y tramitador. Los modelos 2011 en adelante pagan impuestos completos." },
+    { "tema": "vin", "respuesta": "Para modelos 2011 en adelante, los vehículos fabricados en Estados Unidos (VIN que inicia con 1, 4 o 5) no pagan arancel (DAI) gracias al DR-CAFTA. Los de otros países pagan entre 5 % y 15 %." },
+    { "tema": "titulos", "respuesta": "En subasta hay vehículos con título limpio (clean) y con título de salvamento (salvage o rebuildable). Los de salvamento suelen ser más baratos porque tuvieron un siniestro; el asesor revisa cada caso." },
+    { "tema": "documentos", "pendiente": true, "respuesta": "En general se necesita el título del vehículo, la factura de compra de la subasta, el conocimiento de embarque (BL) y la identidad o RTN de quien importa. El asesor confirma la lista completa." },
+    { "tema": "tiempos", "pendiente": true, "respuesta": "El tiempo desde la compra hasta la entrega depende del estado de origen, la naviera y la aduana. El asesor da un estimado para cada caso." },
+    { "tema": "pagos_y_descuentos", "respuesta": "El asistente solo da estimados. La cotización formal, los descuentos y las formas de pago las define el asesor." }
+  ]
+}

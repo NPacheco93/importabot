@@ -1,0 +1,19 @@
+{
+  "_actualizado": "2026-10-18",
+  "_nota": "Rango de precio final en subasta (USD, sin comisiones). Si un modelo no está aquí, el asistente no inventa precio y pasa al asesor. Meta: 5 a 10 modelos, 10+ ventas cada uno.",
+  "modelos": [
+    {
+      "marca": "toyota",
+      "modelo": "tacoma",
+      "anio_desde": 2005,
+      "anio_hasta": 2008,
+      "tipo_vehiculo": "pickup",
+      "version": "Doble cabina, 4x4, automática, menos de 200,000 millas, daño leve o moderado",
+      "precio_min_usd": 2750,
+      "precio_max_usd": 5100,
+      "muestras": 4,
+      "confianza": "baja",
+      "_fuente": "2 ventas cerradas (carsbidshistory: $2,750 feb-2024 y $3,750 may-2025) y 2 estimados de subastas activas en bid.cars (oct-2026)."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "_actualizado": "2026-11-22",
+  "_fuente": "Rangos iniciales estimados a partir de importaciones propias (2026), redondeados. Ajustar con cada vehículo nuevo.",
+  "niveles": {
+    "leve": {
+      "min": 8000,
+      "max": 15000,
+      "descripcion": "Golpes pequeños, rayones, piezas sueltas"
+    },
+    "moderado": {
+      "min": 15000,
+      "max": 35000,
+      "descripcion": "Bumper, focos, guardafangos o algo de mecánica"
+    },
+    "fuerte": {
+      "min": 35000,
+      "max": 50000,
+      "descripcion": "Estructura, motor o bolsas de aire activadas"
+    }
+  }
+}

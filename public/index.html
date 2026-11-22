@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>ImportaBot</title>
+  <meta name="description" content="Presupuestos estimados para importar vehículos de Estados Unidos a Honduras">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js"></script>
+  <script src="vendor/marked.min.js"></script>
+  <script src="vendor/purify.min.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header class="barra">
+      <div class="marca">
+        <div class="logo" aria-hidden="true">IB</div>
+        <div>
+          <h1>ImportaBot</h1>
+          <p>Importación de vehículos · EE. UU. → Honduras</p>
+        </div>
+      </div>
+      <button id="nueva" class="boton-claro" type="button">Nueva conversación</button>
+    </header>
+
+    <main id="chat" class="chat" aria-live="polite">
+      <div class="burbuja bot">
+        <p>¡Hola! Soy <strong>ImportaBot</strong>. Te ayudo a estimar cuánto cuesta traer un vehículo desde subastas de Estados Unidos hasta Honduras.</p>
+        <p>Puedo cotizarte en dos modalidades:</p>
+        <ul>
+          <li><strong>Sin reparar:</strong> el vehículo fuera de puerto, tal como llega.</li>
+          <li><strong>Reparado:</strong> listo para usar, con un rango según el daño.</li>
+        </ul>
+        <p>¿Qué vehículo te interesa?</p>
+      </div>
+      <div class="sugerencias" id="sugerencias">
+        <button type="button" data-texto="Quiero un presupuesto sin reparar">Cotizar sin reparar</button>
+        <button type="button" data-texto="Quiero un presupuesto con el vehículo reparado">Cotizar reparado</button>
+        <button type="button" data-texto="¿Qué documentos necesito para importar un vehículo?">¿Qué documentos necesito?</button>
+        <button type="button" data-texto="¿Por qué los vehículos 2010 y anteriores pagan menos impuestos?">Amnistía 2010 y anteriores</button>
+      </div>
+    </main>
+
+    <footer class="entrada">
+      <form id="formulario">
+        <textarea id="texto" rows="1" maxlength="800" placeholder="Escribí tu consulta…" aria-label="Tu consulta"></textarea>
+        <button id="enviar" type="submit" aria-label="Enviar">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M3.4 20.4 21 12 3.4 3.6l-.01 6.53L15 12 3.39 13.87z"/></svg>
+        </button>
+      </form>
+      <p class="aviso">Los montos son estimados, no cotizaciones formales. No compartas tu identidad, teléfono ni tarjetas en este chat.</p>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

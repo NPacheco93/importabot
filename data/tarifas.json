@@ -1,0 +1,64 @@
+{
+  "_actualizado": "2026-11-22",
+  "tipo_cambio": {
+    "lps_por_usd": 27.04,
+    "_fuente": "BCH, tasa de venta del 5 de noviembre de 2026 (El Heraldo). Actualizar cada semana."
+  },
+  "flete_lps": {
+    "pickup": {
+      "min": 48000,
+      "max": 51000,
+      "_fuente": "Rango redondeado de importaciones propias (2026)"
+    },
+    "suv": {
+      "min": 30000,
+      "max": 30000,
+      "_fuente": "Valor redondeado de importaciones propias (2026)"
+    },
+    "sedan": {
+      "min": 30000,
+      "max": 30000,
+      "_fuente": "Sin dato propio todavía: se usa el valor de SUV hasta tener la tabla de flete actualizada"
+    }
+  },
+  "comision_subasta_usd": {
+    "_fuente": "Aproximado con las tarifas publicadas de Copart (buyer fee + gate fee + document fee + bid fee), SalvageReseller, nov. 2026. Confirmar con mis facturas de Copart e IAAI.",
+    "tramos": [
+      {
+        "hasta": 1000,
+        "monto": 630
+      },
+      {
+        "hasta": 3000,
+        "monto": 915
+      },
+      {
+        "hasta": 5000,
+        "monto": 1075
+      },
+      {
+        "hasta": 10000,
+        "monto": 1200
+      },
+      {
+        "hasta": null,
+        "monto": 1500
+      }
+    ]
+  },
+  "tramites_honduras_lps": {
+    "parqueo_fiscal": 7100,
+    "tramitador": {
+      "min": 3500,
+      "max": 4000
+    },
+    "_fuente": "Asociación de Importadores de Vehículos, citada por La Prensa (febrero 2026)"
+  },
+  "validez_estimado_dias": 7,
+  "comision_negocio": {
+    "tipo": "fijo",
+    "monto_lps": 0,
+    "porcentaje": 0,
+    "_nota": "tipo = \"fijo\" (monto_lps por vehículo) o \"porcentaje\" (sobre el costo antes de la comisión). PENDIENTE: valor real."
+  }
+}

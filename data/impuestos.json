@@ -1,0 +1,33 @@
+{
+  "_actualizado": "2026-11-15",
+  "_aviso": "Confirmar tasas vigentes y duración de la amnistía con el agente aduanero antes de usar con clientes.",
+  "amnistia": {
+    "anio_maximo": 2010,
+    "tasa_unica_lps": 10000,
+    "_fuente": "La Prensa, 'Tasa única para importación de vehículos se amplía dos años' (febrero 2026)"
+  },
+  "regimen_normal": {
+    "_fuente": "El Heraldo, '¿Qué impuestos se pagan por importar un vehículo?' (2018); Chirinos & Cía. sobre DR-CAFTA (2023)",
+    "dai_porcentaje": {
+      "estados_unidos": { "min": 0,  "max": 0 },
+      "otro":           { "min": 5,  "max": 15 },
+      "desconocido":    { "min": 0,  "max": 15 }
+    },
+    "vin_estados_unidos": ["1", "4", "5"],
+    "isc_tramos_usd": [
+      { "hasta": 7000,   "porcentaje": 10 },
+      { "hasta": 10000,  "porcentaje": 15 },
+      { "hasta": 20000,  "porcentaje": 20 },
+      { "hasta": 50000,  "porcentaje": 30 },
+      { "hasta": 100000, "porcentaje": 45 },
+      { "hasta": null,   "porcentaje": 60 }
+    ],
+    "isv_porcentaje": 15,
+    "ecotasa_tramos_usd": [
+      { "hasta": 15000, "monto_lps": 5000 },
+      { "hasta": 25000, "monto_lps": 7000 },
+      { "hasta": null,  "monto_lps": 10000 }
+    ],
+    "antiguedad_maxima_anios": { "turismo": 10, "trabajo": 13, "_fuente": "Chirinos & Cía. (2023). Verificar si sigue vigente." }
+  }
+}

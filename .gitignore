@@ -1,0 +1,5 @@
+node_modules/
+.env
+registros/
+.netlify/
+.DS_Store

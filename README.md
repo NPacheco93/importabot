@@ -2,7 +2,7 @@
 
 Asistente virtual con inteligencia artificial que da **presupuestos estimados para importar vehículos** desde subastas de Estados Unidos (Copart e IAAI) hasta Puerto Cortés, Honduras.
 
-**Versión en vivo:** [URL-DE-NETLIFY]
+**Versión en vivo:** https://importabot-hn.netlify.app
 
 Proyecto Integrador · Inteligencia Artificial Aplicada · Universidad Tecnológica de Honduras, campus San Pedro Sula · Nery David Pacheco Rivera · 2026
 

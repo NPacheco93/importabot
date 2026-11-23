@@ -36,6 +36,17 @@ function enlaceWhatsApp(resumen) {
   return `${base}?text=${encodeURIComponent(resumen)}`;
 }
 
+// Botón fijo "Hablar con un asesor": lleva el último estimado o, si no hay, la última consulta del cliente.
+document.getElementById('asesor').addEventListener('click', (e) => {
+  const ultimaTarjeta = [...eventos].reverse().find((ev) => ev.tipo === 'tarjeta');
+  const ultimaConsulta = [...eventos].reverse().find((ev) => ev.tipo === 'usuario');
+  const texto = ultimaTarjeta
+    ? ultimaTarjeta.calculo.resumen_asesor
+    : 'Hola, vengo de ImportaBot y quiero una cotización.' +
+      (ultimaConsulta ? `\nMi consulta: ${ultimaConsulta.texto.slice(0, 300)}` : '');
+  e.currentTarget.href = enlaceWhatsApp(texto);
+});
+
 const TEXTO_ESTADO = {
   cubre: (p) => `Tu presupuesto de ${L(p.presupuesto_lps)} alcanza. Precio máximo sugerido en subasta: $${p.precio_maximo_subasta_usd.toLocaleString('en-US')}.`,
   parcial: (p) => `Tu presupuesto de ${L(p.presupuesto_lps)} alcanza solo en parte del rango: el vehículo debería costar $${p.precio_maximo_subasta_usd.toLocaleString('en-US')} o menos en subasta.`,
